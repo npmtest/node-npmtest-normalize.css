@@ -1,6 +1,4 @@
-<!doctype html>
-<html lang="en">
-<head>
+<html lang="en"><head>
     <title>Code coverage report for node-npmtest-normalize.css/example.js</title>
     <meta charset="utf-8">
     <style>
@@ -210,11 +208,11 @@
         
         Ignored: <span class="metric">26 statements, 1 function, 30 branches</span> &nbsp;&nbsp;&nbsp;&nbsp;
     </h2>
-    <div class="path"><a href="../index.html">All files</a> &#187; <a href="index.html">node-npmtest-normalize.css/</a> &#187; example.js</div>
+    <div class="path"><a href="../index.html">All files</a> » <a href="index.html">node-npmtest-normalize.css/</a> » example.js</div>
 </div>
 <div class="body">
 <pre><table class="coverage">
-<tr><td class="line-count">1
+<tbody><tr><td class="line-count">1
 2
 3
 4
@@ -937,7 +935,7 @@ instruction
     /* istanbul ignore next */
     case 'browser':
         local.testRunBrowser = function (event) {
-            <span class="skip-if-branch" title="else path not taken" >E</span>if (!event || (event &amp;&amp;
+            <span class="skip-if-branch" title="else path not taken">E</span>if (!event || (event &amp;&amp;
                     event.currentTarget &amp;&amp;
                     event.currentTarget.className &amp;&amp;
                     event.currentTarget.className.includes &amp;&amp;
@@ -947,19 +945,19 @@ instruction
                     document.querySelectorAll('body &gt; .resettable')
                 ).forEach(function (element) {
                     switch (element.tagName) {
-<span class="branch-0 cbranch-skip" title="branch not covered" >                    case 'INPUT':</span>
+<span class="branch-0 cbranch-skip" title="branch not covered">                    case 'INPUT':</span>
                     case 'TEXTAREA':
                         element.value = '';
                         break;
-<span class="branch-2 cbranch-skip" title="branch not covered" >                    default:</span>
-<span class="cstat-skip" title="statement not covered" >                        element.textContent = '';</span>
+<span class="branch-2 cbranch-skip" title="branch not covered">                    default:</span>
+<span class="cstat-skip" title="statement not covered">                        element.textContent = '';</span>
                     }
                 });
             }
             switch (event &amp;&amp; event.currentTarget &amp;&amp; event.currentTarget.id) {
             case 'testRunButton1':
                 // show tests
-                <span class="skip-if-branch" title="else path not taken" >E</span>if (document.querySelector('#testReportDiv1').style.display === 'none') {
+                <span class="skip-if-branch" title="else path not taken">E</span>if (document.querySelector('#testReportDiv1').style.display === 'none') {
                     document.querySelector('#testReportDiv1').style.display = 'block';
                     document.querySelector('#testRunButton1').textContent =
                         'hide internal test';
@@ -967,25 +965,25 @@ instruction
                     local.testRunDefault(local);
                 // hide tests
                 } else {
-<span class="cstat-skip" title="statement not covered" >                    document.querySelector('#testReportDiv1').style.display = 'none';</span>
-<span class="cstat-skip" title="statement not covered" >                    document.querySelector('#testRunButton1').textContent = 'run internal test';</span>
+<span class="cstat-skip" title="statement not covered">                    document.querySelector('#testReportDiv1').style.display = 'none';</span>
+<span class="cstat-skip" title="statement not covered">                    document.querySelector('#testRunButton1').textContent = 'run internal test';</span>
                 }
                 break;
             // custom-case
             default:
                 break;
             }
-            <span class="skip-if-branch" title="if path not taken" >I</span>if (document.querySelector('#inputTextareaEval1') &amp;&amp; (<span class="branch-1 cbranch-skip" title="branch not covered" >!event </span>|| (<span class="branch-2 cbranch-skip" title="branch not covered" >event </span>&amp;&amp;
-<span class="branch-3 cbranch-skip" title="branch not covered" >                    event.currentTarget </span>&amp;&amp;
-<span class="branch-4 cbranch-skip" title="branch not covered" >                    event.currentTarget.className </span>&amp;&amp;
-<span class="branch-5 cbranch-skip" title="branch not covered" >                    event.currentTarget.className.includes </span>&amp;&amp;
-<span class="branch-6 cbranch-skip" title="branch not covered" >                    event.currentTarget.className.includes('oneval'))</span>)) {
+            <span class="skip-if-branch" title="if path not taken">I</span>if (document.querySelector('#inputTextareaEval1') &amp;&amp; (<span class="branch-1 cbranch-skip" title="branch not covered">!event </span>|| (<span class="branch-2 cbranch-skip" title="branch not covered">event </span>&amp;&amp;
+<span class="branch-3 cbranch-skip" title="branch not covered">                    event.currentTarget </span>&amp;&amp;
+<span class="branch-4 cbranch-skip" title="branch not covered">                    event.currentTarget.className </span>&amp;&amp;
+<span class="branch-5 cbranch-skip" title="branch not covered">                    event.currentTarget.className.includes </span>&amp;&amp;
+<span class="branch-6 cbranch-skip" title="branch not covered">                    event.currentTarget.className.includes('oneval'))</span>)) {
                 // try to eval input-code
-<span class="cstat-skip" title="statement not covered" >                try {</span>
+<span class="cstat-skip" title="statement not covered">                try {</span>
                     /*jslint evil: true*/
-<span class="cstat-skip" title="statement not covered" >                    eval(document.querySelector('#inputTextareaEval1').value);</span>
+<span class="cstat-skip" title="statement not covered">                    eval(document.querySelector('#inputTextareaEval1').value);</span>
                 } catch (errorCaught) {
-<span class="cstat-skip" title="statement not covered" >                    console.error(errorCaught);</span>
+<span class="cstat-skip" title="statement not covered">                    console.error(errorCaught);</span>
                 }
             }
         };
@@ -996,14 +994,14 @@ instruction
                 var element;
                 console[key + '_original'].apply(console, arguments);
                 element = document.querySelector('#outputTextareaStdout1');
-                <span class="skip-if-branch" title="if path not taken" >I</span>if (!element) {
-<span class="cstat-skip" title="statement not covered" >                    return;</span>
+                <span class="skip-if-branch" title="if path not taken">I</span>if (!element) {
+<span class="cstat-skip" title="statement not covered">                    return;</span>
                 }
                 // append text to #outputTextareaStdout1
                 element.value += Array.from(arguments).map(function (arg) {
                     return typeof arg === 'string'
                         ? arg
-                        : <span class="branch-1 cbranch-skip" title="branch not covered" >JSON.stringify(arg, null, 4);</span>
+                        : <span class="branch-1 cbranch-skip" title="branch not covered">JSON.stringify(arg, null, 4);</span>
                 }).join(' ') + '\n';
                 // scroll textarea to bottom
                 element.scrollTop = element.scrollHeight;
@@ -1125,8 +1123,8 @@ utility2-comment --&gt;\n\
 &lt;/html&gt;\n\
 ';
         /* jslint-ignore-end */
-        <span class="skip-if-branch" title="if path not taken" >I</span>if (local.templateRender) {
-<span class="cstat-skip" title="statement not covered" >            local.assetsDict['/'] = local.templateRender(</span>
+        <span class="skip-if-branch" title="if path not taken">I</span>if (local.templateRender) {
+<span class="cstat-skip" title="statement not covered">            local.assetsDict['/'] = local.templateRender(</span>
                 local.assetsDict['/assets.index.template.html'],
                 {
                     env: local.objectSetDefault(local.env, {
@@ -1147,59 +1145,60 @@ utility2-comment --&gt;\n\
                         return 'the greatest app in the world!';
                     case 'npm_package_name':
                         return 'my-app';
-<span class="branch-2 cbranch-skip" title="branch not covered" >                    case 'npm_package_nameAlias':</span>
-<span class="cstat-skip" title="statement not covered" >                        return 'my_app';</span>
+<span class="branch-2 cbranch-skip" title="branch not covered">                    case 'npm_package_nameAlias':</span>
+<span class="cstat-skip" title="statement not covered">                        return 'my_app';</span>
                     case 'npm_package_version':
                         return '0.0.1';
                     }
                 });
         }
         // run the cli
-        <span class="skip-if-branch" title="else path not taken" >E</span>if (local.global.utility2_rollup || module !== require.main) {
+        <span class="skip-if-branch" title="else path not taken">E</span>if (local.global.utility2_rollup || module !== require.main) {
             break;
         }
-<span class="cstat-skip" title="statement not covered" >        local.assetsDict['/assets.example.js'] =</span>
+<span class="cstat-skip" title="statement not covered">        local.assetsDict['/assets.example.js'] =</span>
             local.assetsDict['/assets.example.js'] ||
             local.fs.readFileSync(__filename, 'utf8');
         // bug-workaround - long $npm_package_buildCustomOrg
         /* jslint-ignore-begin */
-<span class="cstat-skip" title="statement not covered" >        local.assetsDict['/assets.npmtest_normalize_css.rollup.js'] =</span>
+<span class="cstat-skip" title="statement not covered">        local.assetsDict['/assets.npmtest_normalize_css.rollup.js'] =</span>
             local.assetsDict['/assets.npmtest_normalize_css.rollup.js'] ||
             local.fs.readFileSync(
                 local.npmtest_normalize_css.__dirname + '/lib.npmtest_normalize_css.js',
                 'utf8'
             ).replace((/^#!/), '//');
         /* jslint-ignore-end */
-<span class="cstat-skip" title="statement not covered" >        local.assetsDict['/favicon.ico'] = local.assetsDict['/favicon.ico'] || '';</span>
+<span class="cstat-skip" title="statement not covered">        local.assetsDict['/favicon.ico'] = local.assetsDict['/favicon.ico'] || '';</span>
         // if $npm_config_timeout_exit exists,
         // then exit this process after $npm_config_timeout_exit ms
-<span class="cstat-skip" title="statement not covered" >        if (Number(process.env.npm_config_timeout_exit)) {</span>
-<span class="cstat-skip" title="statement not covered" >            setTimeout(process.exit, Number(process.env.npm_config_timeout_exit));</span>
+<span class="cstat-skip" title="statement not covered">        if (Number(process.env.npm_config_timeout_exit)) {</span>
+<span class="cstat-skip" title="statement not covered">            setTimeout(process.exit, Number(process.env.npm_config_timeout_exit));</span>
         }
         // start server
-<span class="cstat-skip" title="statement not covered" >        if (local.global.utility2_serverHttp1) {</span>
-<span class="cstat-skip" title="statement not covered" >            break;</span>
+<span class="cstat-skip" title="statement not covered">        if (local.global.utility2_serverHttp1) {</span>
+<span class="cstat-skip" title="statement not covered">            break;</span>
         }
-<span class="cstat-skip" title="statement not covered" >        process.env.PORT = process.env.PORT || '8081';</span>
-<span class="cstat-skip" title="statement not covered" >        console.error('server starting on port ' + process.env.PORT);</span>
-<span class="cstat-skip" title="statement not covered" >        local.http.createServer(<span class="fstat-skip" title="function not covered" >function (request, response) {</span></span>
-<span class="cstat-skip" title="statement not covered" >            request.urlParsed = local.url.parse(request.url);</span>
-<span class="cstat-skip" title="statement not covered" >            if (local.assetsDict[request.urlParsed.pathname] !== undefined) {</span>
-<span class="cstat-skip" title="statement not covered" >                response.end(local.assetsDict[request.urlParsed.pathname]);</span>
-<span class="cstat-skip" title="statement not covered" >                return;</span>
+<span class="cstat-skip" title="statement not covered">        process.env.PORT = process.env.PORT || '8081';</span>
+<span class="cstat-skip" title="statement not covered">        console.error('server starting on port ' + process.env.PORT);</span>
+<span class="cstat-skip" title="statement not covered">        local.http.createServer(<span class="fstat-skip" title="function not covered">function (request, response) {</span></span>
+<span class="cstat-skip" title="statement not covered">            request.urlParsed = local.url.parse(request.url);</span>
+<span class="cstat-skip" title="statement not covered">            if (local.assetsDict[request.urlParsed.pathname] !== undefined) {</span>
+<span class="cstat-skip" title="statement not covered">                response.end(local.assetsDict[request.urlParsed.pathname]);</span>
+<span class="cstat-skip" title="statement not covered">                return;</span>
             }
-<span class="cstat-skip" title="statement not covered" >            response.statusCode = 404;</span>
-<span class="cstat-skip" title="statement not covered" >            response.end();</span>
+<span class="cstat-skip" title="statement not covered">            response.statusCode = 404;</span>
+<span class="cstat-skip" title="statement not covered">            response.end();</span>
         }).listen(process.env.PORT);
-<span class="cstat-skip" title="statement not covered" >        break;</span>
+<span class="cstat-skip" title="statement not covered">        break;</span>
     }
 }());
 &nbsp;
 &nbsp;</pre></td></tr>
-</table></pre>
+</tbody></table></pre>
 </div>
 <div class="footer">
     <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Tue Apr 25 2017 22:45:04 GMT+0000 (UTC)</div>
 </div>
-</body>
-</html>
+
+
+</body></html>
